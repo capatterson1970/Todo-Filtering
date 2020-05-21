@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Dummy To Do</title>
+</head>
+<body>
+    <button onclick="fetchTodos()">Fetch Todos</button>
+    <button onclick="logTodos()">Log Todos</button>
+    <button onclick="populateTodos()">Populate Todos</button>
+    
+    <form action="results.html" method="GET" enctype="multipart/form-data" >
+    <div class="userID">
+        <label for="userID">Enter a User ID: (1-10)</label>
+        <input type="text" name="userID" id="userID" >
+    </div>
+    </form>
+    
+    <button onclick="filterList()">Filter Todos</button>
+    <button onclick="populateFilteredTodos()">Populate Filtered Todos</button>
+    <ol id="todo-list">
+    <!-- LIs will go here -->
+    </ol>
+</body>
+</html>
